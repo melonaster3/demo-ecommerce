@@ -639,21 +639,48 @@
 
 <main class="wrap">
   <h1>장바구니</h1>
-  <p class="demo-badge">* 이 페이지는 더미(데모) 모드로, 상세 페이지의 대표 상품이 자동으로 담겨 보입니다.</p>
+
   <div class="grid">
-    <section id="cartList" class="cart"></section>
-    <aside class="summary">
-      <div class="summary-row"><span>상품 소계</span><strong id="subtotal">₩0</strong></div>
+
+    <section id="cartList" class="cart">
+
+      <div class="cart-item">
+        <img alt="Black Hoodie"            src="https://cdn2.wadiz.kr/2024/10/24/7920e09a-fb04-46ce-b24e-3b0ad797328a.jpg/wadiz/resize/1200/format/jpg/quality/80/"
+>
+        <div>
+          <div class="item-title">프리미엄 데일리 캐주얼 셔츠</div>
+          <div class="item-meta">사이즈: L · 색상: Black</div>
+          <button class="btn" data-remove="0">삭제</button>
+        </div>
+        <div style="text-align:right">
+          <div style="font-weight:700; margin-bottom:8px">₩49,000</div>
+          <div class="qty">
+            <button class="btn" data-dec="0">-</button>
+            <input type="number" min="1" value="1" data-qty="0">
+            <button class="btn" data-inc="0">+</button>
+          </div>
+        </div>
+      </div>
+
+  
+
+    </section>
+
+    <aside class="summary" style="display:block">
+      <div class="summary-row"><span>상품 소계</span><strong id="subtotal">₩49,000</strong></div>
       <div class="summary-row"><span>배송비</span><span id="shipping">₩0</span></div>
       <div class="summary-row"><span>할인</span><span id="discount">-₩0</span></div>
-      <div class="summary-row total"><span>결제 예정 금액</span><strong id="grandTotal">₩0</strong></div>
+      <div class="summary-row total"><span>결제 예정 금액</span><strong id="grandTotal">₩49,000</strong></div>
       <div class="actions">
         <button class="btn" id="continue">계속 쇼핑하기</button>
         <button class="btn btn-primary" id="checkout">결제하기</button>
       </div>
     </aside>
   </div>
-  <div id="emptyBox" class="empty" style="display:none">장바구니가 비어 있습니다. <a href="./index.html">상품 보러가기</a></div>
+
+  <div id="emptyBox" class="empty" style="display:none">
+    장바구니가 비어 있습니다. <a href="./index.html">상품 보러가기</a>
+  </div>
 </main>
 <footer>
       <div class="footer-category">

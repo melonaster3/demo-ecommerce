@@ -985,10 +985,7 @@
     const totals = renderSummary(readCart());
 
     // 데모: 자동 성공 표시 (3초 후)
-    if(DEMO_MODE){
-      setTimeout(()=> showSuccess('테스트 사용자','가상결제(데모)', totals.total), 1500);
-    }
-
+  
     // 버튼으로 즉시 시뮬레이션
     document.getElementById('simulatePay').addEventListener('click', ()=>{
       showSuccess('테스트 사용자','가상결제(데모)', totals.total);
